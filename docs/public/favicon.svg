@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Awesome Firmware Rehosting</title>
+  <!-- Interlocking paths suggest a firmware environment being rebuilt. -->
+  <g stroke="#087F68" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M31 8 49 18.5v10"/>
+    <path d="M49 35.5v10L31 56"/>
+    <path d="M25 52.5 15 46.5V35"/>
+    <path d="M15 29V18.5L25 12.5"/>
+  </g>
+  <!-- Bidirectional transfer is the rehosting cue. -->
+  <path d="M23 26h18m0 0-5-5m5 5-5 5M41 38H23m0 0 5-5m-5 5 5 5" stroke="#087F68" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
