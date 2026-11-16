@@ -106,7 +106,7 @@ Few CPU models are supported by QEMU. (Table 1)
 
 There are massive distinct peripherals in the corpora. Table 2 shows the peripheras statistics (mean with standard deviation, median ) for each architecture. 
 
-Table 3 shows the Source Lines Of Code (SLOC) for open-source drivers corresponding to peripherals. 
+Table 3 shows the Source Lines Of Code (SLOC) for open-source drivers corresponding to peripherals. (DD means device driver)
 
 Figure 2 shows that building or extending HESs is an impractical approach. 
 
@@ -120,6 +120,7 @@ Figure 2 shows that building or extending HESs is an impractical approach.
 - Hybrid Approaches
 
 ## Rehosting roadmap
+
 (1) Building VXEs for new CPUs/ISAs;
 (2) Widespread adoption of modeling standards;
 (3) Handling peripheral behavior;
