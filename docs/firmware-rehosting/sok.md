@@ -109,6 +109,31 @@ There are massive distinct peripherals in the corpora. Table 2 shows the periphe
 Table 3 shows the Source Lines Of Code (SLOC) for open-source drivers corresponding to peripherals. (DD means device driver)
 
 Figure 2 shows that building or extending HESs is an impractical approach. 
+The 2 years development of QEMU has not improved the situation. And, new SoCs with new peripherals are manufactured. The peripheral diversity is increasing. 
+Manual implementation of peripherals is an unending, expensive endeavor. The manual peripheral implementaion does not scale. 
+
+## Insight of the paper 
+
+### Status 
+
+Advances in this space is ancillary to enabling other research work (fuzzing embedded web applications). 
+
+The process of rehosting is more alchemy than chemistry -- opaque, unrepeatable, and prone to failure. 
+
+### Goal 
+
+By studying rehosting as a research problem in its own right, the broader research community can find more general solutions. 
+
+Rehosting is a systematic and scientific endeavor with standard methodology and effective technologies.
+
+## Rehosting process 
+
+A wide spectrum of processes: reverse engineering, training, system emulation and certification, vulnerability research, and exploit development. 
+
+## Rehosting applications
+
+- Vendors: testing and development of a product. 
+- Third parties: vunerability discovery, system understanding or verification. 
 
 ## Rehosting methods 
 
