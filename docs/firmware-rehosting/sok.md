@@ -140,9 +140,40 @@ A wide spectrum of processes: reverse engineering, training, system emulation an
 4 methods. (showed in Table 4)
 
 - Pure Emulation
+
+The definition is confusing. 
+
+"Do not modify the OS, application, or function layers and only replace the hardware and physical layers. ". Which work achieved it?  
+
+And then, the HALucinator example does not match the definition. 
+
 - Hardware-in-the-Loop Schemes 
+
+Pros: High-fidelity (after all, real hardware). 
+
+Cons: high exection overhead. Not scaling. 
+
+Exception example: Pretender, which generated peripherals models based on hardwares. 
+
 - Symbolic Abstractions
+
+Symbolic VXE: KLEE, S2E, FIE. 
+
+Cons: over-approximation, high FP rates, and state-space explosion. 
+
 - Hybrid Approaches
+
+## Different approaches in embedded system types 
+
+The paper claims that no existing approaches to rehosting Type-2 systems make use of abstractions provided by the OS. 
+
+## Process of rehosting 
+
+Definition: 
+- Build a specification for an RES
+- Evaluate and refine it iteratively 
+
+Insight: iteration is invaluable. 
 
 ## Rehosting roadmap
 
