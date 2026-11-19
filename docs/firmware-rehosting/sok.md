@@ -147,6 +147,8 @@ The definition is confusing.
 
 And then, the HALucinator example does not match the definition. 
 
+After reading sec 6.1, I think pure emulation means that modeling a peripheral in any layer. (conpared to tranfer, Symbolic)
+
 - Hardware-in-the-Loop Schemes 
 
 Pros: High-fidelity (after all, real hardware). 
@@ -169,13 +171,31 @@ The paper claims that no existing approaches to rehosting Type-2 systems make us
 
 ## Process of rehosting 
 
+Figure 3 intuitively illustrates the process. 
+
 Definition: 
 - Build a specification for an RES
 - Evaluate and refine it iteratively 
 
-Insight: iteration is invaluable. 
+**Insight: iteration is invaluable. ** 
 
-## Rehosting roadmap
+In other words, dynamic analysis is indispensable. 
+
+In section 6.1, it says:
+  
+- Build an accurate specification in a single attempt (possible theoretically). 
+- Iterative dynamic analysis (feasible in practice). 
+
+For each round: 
+
+$$ R_i = (cpu_i,fw_i,p_i^j,d_i) $$
+
+## Evaluation of fidelity 
+
+- Comparisons with ground-truth traces / real device. 
+- With prior knowledge (DHCP, HTTP). 
+
+## Rehosting roadmap (in terms of roadblocks)
 
 (1) Building VXEs for new CPUs/ISAs;
 (2) Widespread adoption of modeling standards;
