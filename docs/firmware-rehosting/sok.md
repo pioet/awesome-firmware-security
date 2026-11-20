@@ -198,8 +198,27 @@ $$ R_i = (cpu_i,fw_i,p_i^j,d_i) $$
 ## Rehosting roadmap (in terms of roadblocks)
 
 (1) Building VXEs for new CPUs/ISAs;
+
+ISA statistics differ due to changes in source selection. 
+A lot of firmware is not written for ARM and MIPS on Linux. 
+So creating fast and accurate VXEs is important. 
+
 (2) Widespread adoption of modeling standards;
+
+There are Hardware layouts and peripheral metadata standrads (e.g., Device Trees, ACPI tables, SVD files). But there is no format to encode hardware behavior. 
+The Open Virtual Platforms (OVP) project tries to solve this problem. So does SystemC. 
+It is worth exploring. 
+
 (3) Handling peripheral behavior;
+
+Taxonomies of peripheral modeling:
+
+1. Based on prior knowledge of peripheral behavior or documentation. 
+2. Based on analysis of its firmware or physical system to infer. 
+3. Based on trace (instrumentation signal) of real hardware. 
+4. Replace or remove with a symbolic model. 
+5. Intercept requests at higher layers. 
+
 (4) Quantifying fidelity of a rehosted system; and
 (5) Facilitating rehosting for complex systems
 
@@ -226,4 +245,8 @@ We can distinguish two approaches to evaluating the fidelity of a Rehosted Embed
 | Result | Low false negatives, but potentially high false positives. | Low true positives and low false positives. |
 | Evaluation Criteria | Verify that every reachable state of the physical system is represented in the RES. | Evaluate input-output equivalence between the RES and the physical system under identical inputs. |
 
+## Complex embedded system 
 
+SOTA works on single CPU firmware. Embedded systems with more than one processing unit is complex. 
+
+Interaction between multiple rehosted components are complex. 
