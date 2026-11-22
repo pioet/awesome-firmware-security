@@ -250,3 +250,13 @@ We can distinguish two approaches to evaluating the fidelity of a Rehosted Embed
 SOTA works on single CPU firmware. Embedded systems with more than one processing unit is complex. 
 
 Interaction between multiple rehosted components are complex. 
+
+## Conclusion
+
+prior work: ad-hoc solutions. 
+
+ours: rehosting is a research problem. It can be solved systematically. 
+
+1. Complete hardware emulation is unnecessary and unscalable. 
+2. Taxonomies. 
+3. Challenges and roadmap. 
