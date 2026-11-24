@@ -36,3 +36,28 @@ However, type 2 and type 3 embedded systems need inputs that satisfiy all underl
 SOTA only provides raw data to the network stack, without matching the syntax and semantics of network protocols. 
 
 Pemu enables fuzzing at the application layer, bypassing lower-layer constraints like checksum and header validation. 
+
+## High-level overview 
+
+1. fuzzing as packet input. (generate, encapsulate, input)
+2. firmware output as response. (output, extract, response) (protocol-specific probes and code coverage as feedback)
+
+## Protocol-Aware fuzzing 
+
+Protocol grammers can encapsulate valid packets with fuzzing content. 
+
+Encapsulation module need to maintain states infromation. 
+
+Taxnomaies: 
+- unsolicited packets
+- solicited packets
+
+## Platform independency 
+
+PEMU is agnostic to rehosting platform. 
+
+Two functions are provided by PEMU:
+- get_packet
+- send_packet
+
+## Network Traffic Analysis
