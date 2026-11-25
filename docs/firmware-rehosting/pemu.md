@@ -61,3 +61,27 @@ Two functions are provided by PEMU:
 - send_packet
 
 ## Network Traffic Analysis
+
+1. coverage based probing technique. 
+
+- well-formed inputs can trigger unique reaction, compared to malformed input. 
+
+measure reactions based on coverage: 
+
+- naive: select the highest number of BBs. cons: error-handlin codes produce coverage. 
+- new: uniquely covered basic blocks 
+
+Challenges: network stack relys on other protocols 
+
+design: iterative approach for detecting the entire stack. 
+
+Figure 5 shows: from down to top, like a tree, to discover the protocols in different depth in the network stack. 
+
+pros of this method:
+- robustness:  unused protocol layer is an option, not forced choice. 
+
+2. parsing-based analysis 
+
+feat: iterative and self-correcting. 
+
+- multiple options exist in a header, the most likely one is chosen. 
