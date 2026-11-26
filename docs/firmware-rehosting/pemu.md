@@ -17,7 +17,7 @@ Fuzzer can be used to mimic peripheral data to allow firmware execution without 
 
 ## properties of ideal rehosting  
 
-1. Do not need hardware setup and contfigurations. Do not need seeds to bootstrap fuzzing. 
+1. Do not need hardware setup and configurations. Do not need seeds to bootstrap fuzzing. 
 2. Not only for common network layers, but also application layers. 
 
 ## Two techniques to monitor firmware's response to probing 
@@ -85,3 +85,36 @@ pros of this method:
 feat: iterative and self-correcting. 
 
 - multiple options exist in a header, the most likely one is chosen. 
+
+# implementation 
+
+integration with 3 platforms: 
+- fuzzware 
+- hoedur 
+- sumu 
+
+## PEMU aspects 
+
+**Encapsulation**
+
+two interfaces: receive and send packets 
+
+header fields definition. 
+
+YAML configuration definition. 
+
+**State Extraction**
+
+Parse outupt pakcets according to specifications. 
+
+## PEMU based analysis 
+
+State extraction is not enough. 
+
+Send specified packets and probe coverage. 
+
+## integration with platforms
+
+1. hook-based. Effort per HAL (per MCU family)
+2. peripheral emulation. 
+
