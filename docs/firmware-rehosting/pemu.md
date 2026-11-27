@@ -118,3 +118,24 @@ Send specified packets and probe coverage.
 1. hook-based. Effort per HAL (per MCU family)
 2. peripheral emulation. 
 
+## Emulation 
+
+- Multiple round experiments 
+- Hardware configuration is acceptable 
+
+Three policy: baseline (original), random, pemu. 
+
+## Sample set 
+
+A sample set of 9 applications (from SEMU and FUZZWARE). 
+
+1. Ethernet and TCP/IP 
+2. Bluetooth Low Energy (BLE)
+3. IEEE 802.15.4 
+
+EmNetTest's dataset: 12 CVEs across three ENSs 
+
+## Results 
+
+1. versatility and applicability of PEMU: platform independence 
+2. coverage improved: SEMU ablatioin 
