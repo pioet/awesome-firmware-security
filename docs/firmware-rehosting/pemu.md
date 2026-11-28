@@ -147,3 +147,27 @@ As figure 6 shows:
 - shadow means the fluctuation 
 - PEMU can be integrated with distinct platforms 
 
+As table 4 shows: 
+- random inputs are wrose in network stacks. most packets fail at the IPv4 address validation. 
+- random input can more easily penetrate the MAC layer, 6LoWPAN adaption layer, and IPv6 network layer. (IEEE 802.15.4 network stacks. So does BLE)
+
+Figure 7 shows the applicability of PEMU beyond network stacks. 
+
+## Discussion 
+
+- PEMU requires to know low-level network mechanism. PEMU bypasses DMA question. 
+- The cross-language interaction in Hoedur impacts the performance. 
+- PEMU benefits from improvements of rehosting platform. 
+- Manual effort: 1. integration of new protocols; 2. use with a new firmware, integration of per MCU-HAL combination. 
+
+## related work 
+
+- embedded rehosting: hoedur, fuzzware, semu. 
+- network fuzzing: AFLNET ... 
+
+## conclusion 
+
+- fuzzing the network stacks (not application) in embedded firmware. 
+- encapsulation and awareness. 
+- automatic without domain knowledge 
+- integration with rehosting platforoms
