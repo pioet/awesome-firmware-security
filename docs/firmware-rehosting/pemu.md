@@ -139,3 +139,11 @@ EmNetTest's dataset: 12 CVEs across three ENSs
 
 1. versatility and applicability of PEMU: platform independence 
 2. coverage improved: SEMU ablatioin 
+
+As figure 6 shows: 
+- x axis is time, y axis is basic blocks coverage 
+- coverage gose quickly in the beginning, then get the end 
+- PEMU > RAND > BASE (>: outperforms)
+- shadow means the fluctuation 
+- PEMU can be integrated with distinct platforms 
+
